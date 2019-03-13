@@ -1,0 +1,12 @@
+{
+  "name": "youpod-api",
+  "version": "0.0.1",
+  "description": "REST API for the youpod client",
+  "main": "server.js",
+  "author": "Sachin Saini",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}
