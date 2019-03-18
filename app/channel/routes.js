@@ -1,11 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
-// import config
-const config = require('../config');
 // declare constants
 const BASE_URL = 'https://www.googleapis.com/youtube/v3';
-const API_KEY = config.youtubeAPI.key;
+const API_KEY = process.env.API_KEY || require('../config').youtube.api_key;
 const ACTION = 'search';
 
 // fetch latest videos depending upon the number of videos

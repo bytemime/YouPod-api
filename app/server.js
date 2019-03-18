@@ -1,4 +1,5 @@
 const app = require('./index');
-const config = require('./config');
+const PORT = process.env.PORT || 8080;
+const IP = process.env.IP;
 
-app.listen(config.express.port, config.express.ip);
+app.listen(PORT, IP);
